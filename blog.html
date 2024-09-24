@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                head: 'rgba(249, 247, 243, 1)',
+                button: 'rgba(180, 244, 97, 1)',
+                para: 'rgba(115, 115, 115, 1)',
+              },
+              fontFamily: {
+                lexend: 'lexend',
+              },
+            },
+          },
+        }
+      </script>
+
+</head>
+<body class="font-lexend">
+    <header>
+        <nav class="bg-head py-4">
+            <div class="mx-auto w-11/12 lg:w-10/12 flex justify-between">
+                <div>
+                    <button onclick="home()" class="border-2 md:text-2xl font-bold text-black bg-button px-4 py-2 rounded-md">Home</button>
+                   </div>
+                   <div class="flex items-center gap-3">
+                       <img class="w-6 md:w-8" src="assets/logo.png" alt="">
+                       <h1 class="md:text-2xl font-bold">Donate Bangladesh</h1>
+                   </div>
+                   <div class="flex items-center gap-2">
+                       <img class="w-5 md:w-7" src="assets/coin.png" alt="">
+                       <p id="home-balance" class="md:text-2xl text-para">5500</p>
+                       <p class="md:text-2xl text-para">BDT</p>
+                   </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="my-16 mx-auto w-11/12 lg:w-10/12">
+        <div>
+            <h1 class="text-4xl font-bold">Important FAQ ?</h1>
+        </div>
+        <div class="mt-10">
+            <div tabindex="0" class="collapse collapse-arrow border-base-300 border">
+                <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+                <div class="collapse-content">
+                  <p class="text-para">The Document Object Model (DOM) is a programming interface for web documents, such as HTML and XML. It represents the structure of a document as a tree of objects, where each part of the document (like elements, attributes, and text) is a node in this tree. The DOM allows programming languages like JavaScript to interact with and manipulate the structure, content, and styling of a webpage dynamically.</p>
+                </div>
+              </div>
+
+              <div tabindex="0" class="collapse collapse-arrow border-base-300 border">
+                <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+                <div class="collapse-content">
+                  <p class="text-para">To select an element from the DOM, you can use different methods depending on how the element is identified. You can choose an element by its unique ID, by its class name, by its tag type (such as a paragraph or div), or by using more complex CSS-style selectors to target specific elements or combinations. These methods allow you to retrieve and interact with specific elements in the document for manipulation or styling.</p>
+                </div>
+              </div>
+              
+              <div tabindex="0" class="collapse collapse-arrow border-base-300 border">
+                <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+                <div class="collapse-content">
+                  <p class="text-para">Event delegation is a technique in the DOM where a single event listener is attached to a parent element to handle events for its child elements. This method leverages event bubbling, allowing the parent to respond to events triggered by any of its children. This approach is useful because it enhances performance by reducing the number of event listeners needed, which is especially beneficial in large or dynamic applications. It also simplifies event management, as the same listener can handle events for newly added child elements without needing to reattach listeners. Overall, event delegation makes code more efficient and easier to maintain.</p>
+                </div>
+              </div>
+
+              <div tabindex="0" class="collapse collapse-arrow border-base-300 border">
+                <div class="collapse-title text-xl font-medium">How do you manipulated an element's attributes and styles using the DOM?</div>
+                <div class="collapse-content">
+                  <p class="text-para">To manipulate an element's attributes and styles using the DOM, you can use various methods in JavaScript. For attributes, you can utilize the setAttribute method to assign new values to specific attributes, and the getAttribute method to retrieve the current values. Additionally, for certain attributes, you can directly access and modify them as properties, such as changing the value of input fields. For styling, you can use the style property to change individual CSS properties directly, like adjusting the backgroundColor or fontSize. The classList property allows you to add, remove, or toggle CSS classes, enabling changes based on predefined styles. This approach facilitates dynamic modifications to the document, creating interactive and responsive web applications.</p>
+                </div>
+              </div>
+        </div>
+    </main>
+    <script src="js/index.js"></script>
+</body>
+</html>
