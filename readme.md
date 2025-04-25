@@ -9,6 +9,6 @@ Your donation has the power to change lives. At Donate Bangladesh, we work tirel
 - ✅ JS (JavaScript)
 - ✅ DOM (Document Object Model)
 
-## live Demo :
+## Live Demo :
 
 [https://donate-bangladesh-website.netlify.app/](https://donate-bangladesh-website.netlify.app/)
